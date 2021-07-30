@@ -5,10 +5,25 @@ let outputDiv = document.querySelector("#output");
 
 const serverURL = "https://api.funtranslations.com/translate/shakespeare.json";
 
+// Return the server URL with input text.
+function getTranslationURL(text) {
+  return serverURL + "?" + "text=" + text;
+}
+
+// Error Handler in case an error occurs
+function errorHandler(error) {
+  console.log("Error Occurred: " + error);
+}
+
 // Event Handler
 function clickHandler() {
   let inputText = textInput.value;
-  console.log(inputText);
+
+  // Calling Shakespeare translate api using fetch
+  fetch(getTranslationURL(inputText))
+    .then((response) => response.json())
+    .then((json) => (outputDiv.innerHTML = json.contents.translated))
+    .catch(errorHandler);
 }
 
 // Event Listeners
