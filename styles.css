@@ -15,18 +15,130 @@ body {
     padding: 0;
 }
 
-#text-input {
-    width: 80%;
-    height: 10vh;
-    display: block;
-    margin:1rem;
+.container {
+    padding: 0rem 1rem;
+}
+
+.container-center {
+    width: 95%;
+    margin: 0rem 1rem;
     padding: 1rem;
 }
 
+/* Header Area */
+
+.header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    text-align: center;
+}
+
+.header h1 {
+    letter-spacing: 0.08em;
+    font-weight: bolder;
+}
+
+/* Input Area */
+
+.input-area {
+    padding: 1rem;
+    margin: 1rem;
+    background-color: var(--faded-blue);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+#text-input {
+    width: 85%;
+    height: 10vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+#btn-translate {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-family: inherit;
+    font-size: normal;
+    letter-spacing: 0.2em;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Output Area */
+
+.output-area {
+    padding: 1rem;
+    margin: 1rem;
+    background-color: var(--purplish);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+#text {
+    color: bisque;
+    font-size: larger;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
 #output {
-    border: 1px solid black;
-    height:10vh;
-    width:80%;
-    margin:1rem;
-    padding:1rem;
+    border: 1px solid;
+    color: bisque;
+    font-size: normal;
+    letter-spacing: 0.1em;
+    width:85%;
+    height: 10vh;
+    border-color: var(--primary-color);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+/* Footer Area */
+.footer {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    text-align: center;
+}
+
+.footer p {
+    letter-spacing: 0.08em;
+    line-height: 1.5em;
+    font-weight: normal;
+    font-size: 15px;
 }
