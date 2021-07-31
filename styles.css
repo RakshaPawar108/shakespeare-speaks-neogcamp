@@ -1,3 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Metamorphous&display=swap');
+
+:root {
+    --primary-color: #c38659;
+    --secondary-color: #4e3429;
+    --dark-grey: #948c8b;
+    --purplish: #6c6c94;
+    --faded-blue: #647498;
+}
+
+body {
+    font-family: 'Metamorphous',
+    cursive;
+    margin: 0;
+    padding: 0;
+}
+
 #text-input {
     width: 80%;
     height: 10vh;

@@ -8,13 +8,24 @@
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <h1>Shakespeare Speaks!</h1>
-    <textarea id="text-input" placeholder="Put your sentence in English here and Shakespeare will translate it into the English language of his times!!"></textarea>
-    <button id="btn-translate">Translate to Shakespearean!</button>
+    <div class="header">
+        <h1>Shakespeare Speaks!</h1>
+    </div>
+    <div class="input-area">
+        <textarea id="text-input" placeholder="Put your sentence in English here and Shakespeare will translate it into the English language of his times!!"></textarea>
+        <div class="wrapper">
+            <button id="btn-translate">Translate to Shakespearean!</button>
 
-    <div>Shakespearean Translation Cometh Hither !! 👇</div>
-    <div id="output"></div>
+        </div>
+    </div>
+    <div class="output-area">
+        <div style="font-size:larger;" id="text">Shakespearean Translation Cometh Hither !! 👇</div>
+        <div id="output"></div>
+    </div>
 
+    <div class="footer">
+        <p>About: <br/> </p>
+    </div>
     <script src="/app.js" type="text/javascript"></script>
 </body>
 </html>
